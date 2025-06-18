@@ -1,0 +1,16 @@
+    start
+    jump main_entry
+    jump PrintValue_end
+PrintValue:
+    pushl -1
+    writei
+    pushs "\n"
+    writes
+    return
+PrintValue_end:
+main_entry:
+    pushi 42
+    pusha PrintValue
+    call
+    pop 1
+    stop

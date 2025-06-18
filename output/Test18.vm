@@ -1,0 +1,20 @@
+    start
+main_entry:
+    alloc 5
+    storeg 0
+    pushi 88
+    pushi 2
+    pushl 0
+    swap
+    pushi 0
+    sub
+    storen
+    pushl 0
+    pushi 2
+    pushi 0
+    sub
+    loadn
+    writei
+    pushs "\n"
+    writes
+    stop

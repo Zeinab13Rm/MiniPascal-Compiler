@@ -1,0 +1,42 @@
+ProgramNode
+  IdentNode (Name: TestTwenty, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: x, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      ProcedureHeadNode
+        IdentNode (Name: ShadowTest, L:8, C:11)
+        ArgumentsNode
+      Declarations
+        VarDecl
+          IdentifierList
+            IdentNode (Name: x, L:10, C:5)
+          StandardTypeNode (Type: INTEGER)
+      CompoundStatementNode
+        StatementList
+          AssignStatementNode
+            VariableNode
+              IdentNode (Name: x, L:12, C:5)
+            IntNumNode (Value: 99)
+          ProcedureCallStatementNode
+            IdentNode (Name: writeln, L:13, C:5)
+            ExpressionList
+              IdExprNode
+                IdentNode (Name: x, L:13, C:13)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: x, L:17, C:3)
+        IntNumNode (Value: 1)
+      ProcedureCallStatementNode
+        IdentNode (Name: ShadowTest, L:18, C:3)
+        ExpressionList
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:19, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: x, L:19, C:11)

@@ -1,0 +1,46 @@
+ProgramNode
+  IdentNode (Name: TestFifteen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: result, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      FunctionHeadNode
+        IdentNode (Name: Subtract, L:7, C:10)
+        ArgumentsNode
+          ParameterList
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: a, L:7, C:19)
+              StandardTypeNode (Type: INTEGER)
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: b, L:7, C:31)
+              StandardTypeNode (Type: INTEGER)
+        StandardTypeNode (Type: INTEGER)
+      Declarations
+      CompoundStatementNode
+        StatementList
+          ReturnStatementNode
+            BinaryOpNode (Operator: -)
+              IdExprNode
+                IdentNode (Name: a, L:9, C:10)
+              IdExprNode
+                IdentNode (Name: b, L:9, C:14)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: result, L:13, C:3)
+        FunctionCallExprNode
+          IdentNode (Name: Subtract, L:13, C:13)
+          ExpressionList
+            IntNumNode (Value: 10)
+            IntNumNode (Value: 3)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:14, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: result, L:14, C:11)

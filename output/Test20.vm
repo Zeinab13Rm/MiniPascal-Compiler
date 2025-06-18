@@ -1,0 +1,24 @@
+    start
+    jump main_entry
+    jump ShadowTest_end
+ShadowTest:
+    pushn 1
+    pushi 99
+    storel 0
+    pushl 0
+    writei
+    pushs "\n"
+    writes
+    return
+ShadowTest_end:
+main_entry:
+    pushn 1
+    pushi 1
+    storel 0
+    pusha ShadowTest
+    call
+    pushl 0
+    writei
+    pushs "\n"
+    writes
+    stop

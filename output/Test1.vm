@@ -1,0 +1,10 @@
+    start
+main_entry:
+    pushn 1
+    pushi 123
+    storel 0
+    pushl 0
+    writei
+    pushs "\n"
+    writes
+    stop

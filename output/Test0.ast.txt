@@ -1,0 +1,71 @@
+ProgramNode
+  IdentNode (Name: FullTest, L:1, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: x, L:3, C:3)
+        IdentNode (Name: y, L:3, C:6)
+        IdentNode (Name: z, L:3, C:9)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      FunctionHeadNode
+        IdentNode (Name: addition, L:5, C:10)
+        ArgumentsNode
+          ParameterList
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: a, L:5, C:19)
+              StandardTypeNode (Type: INTEGER)
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: b, L:5, C:31)
+              StandardTypeNode (Type: INTEGER)
+        StandardTypeNode (Type: INTEGER)
+      Declarations
+        VarDecl
+          IdentifierList
+            IdentNode (Name: result, L:7, C:5)
+          StandardTypeNode (Type: INTEGER)
+      CompoundStatementNode
+        StatementList
+          AssignStatementNode
+            VariableNode
+              IdentNode (Name: result, L:9, C:5)
+            BinaryOpNode (Operator: +)
+              IdExprNode
+                IdentNode (Name: a, L:9, C:15)
+              IdExprNode
+                IdentNode (Name: b, L:9, C:19)
+          ReturnStatementNode
+            IdExprNode
+              IdentNode (Name: result, L:10, C:12)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: x, L:14, C:3)
+        IntNumNode (Value: 15)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: y, L:15, C:3)
+        IntNumNode (Value: 27)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: z, L:16, C:3)
+        FunctionCallExprNode
+          IdentNode (Name: addition, L:16, C:8)
+          ExpressionList
+            IdExprNode
+              IdentNode (Name: x, L:16, C:17)
+            IdExprNode
+              IdentNode (Name: y, L:16, C:20)
+      ProcedureCallStatementNode
+        IdentNode (Name: write, L:17, C:3)
+        ExpressionList
+          StringLiteralNode (Value: "The result of add(15, 27) is: ")
+          IdExprNode
+            IdentNode (Name: z, L:17, C:43)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:18, C:3)
+        ExpressionList
