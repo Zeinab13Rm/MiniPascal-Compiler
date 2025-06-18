@@ -1,0 +1,25 @@
+    start
+    jump main_entry
+    jump MultiplyByGlobal_end
+MultiplyByGlobal:
+    pushl -1
+    pushg 0
+    mul
+    storel -2
+    return
+MultiplyByGlobal_end:
+main_entry:
+    pushn 2
+    pushi 3
+    storel 0
+    pushn 1
+    pushi 10
+    pusha MultiplyByGlobal
+    call
+    pop 1
+    storel 1
+    pushl 1
+    writei
+    pushs "\n"
+    writes
+    stop

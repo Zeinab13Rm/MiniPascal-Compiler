@@ -1,0 +1,33 @@
+    start
+    jump main_entry
+    jump addition_end
+addition:
+    pushn 1
+    pushl -1
+    pushl -2
+    add
+    storel 0
+    pushl 0
+    storel -3
+    return
+addition_end:
+main_entry:
+    pushn 3
+    pushi 15
+    storel 0
+    pushi 27
+    storel 1
+    pushn 1
+    pushl 1
+    pushl 0
+    pusha addition
+    call
+    pop 2
+    storel 2
+    pushs "The result of add(15, 27) is: "
+    writes
+    pushl 2
+    writei
+    pushs "\n"
+    writes
+    stop

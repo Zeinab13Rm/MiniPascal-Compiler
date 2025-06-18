@@ -1,0 +1,36 @@
+ProgramNode
+  IdentNode (Name: TestEleven, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: i, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: i, L:8, C:3)
+        IntNumNode (Value: 0)
+      WhileStatementNode
+        BinaryOpNode (Operator: LT_OP)
+          IdExprNode
+            IdentNode (Name: i, L:9, C:9)
+          IntNumNode (Value: 3)
+        CompoundStatementNode
+          StatementList
+            ProcedureCallStatementNode
+              IdentNode (Name: write, L:11, C:5)
+              ExpressionList
+                IdExprNode
+                  IdentNode (Name: i, L:11, C:11)
+            AssignStatementNode
+              VariableNode
+                IdentNode (Name: i, L:12, C:5)
+              BinaryOpNode (Operator: +)
+                IdExprNode
+                  IdentNode (Name: i, L:12, C:10)
+                IntNumNode (Value: 1)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:14, C:3)
+        ExpressionList

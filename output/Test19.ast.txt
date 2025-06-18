@@ -1,0 +1,49 @@
+ProgramNode
+  IdentNode (Name: TestNineteen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: my_array, L:6, C:3)
+      ArrayTypeNode
+        IntNumNode (Value: 1)
+        IntNumNode (Value: 5)
+        StandardTypeNode (Type: INTEGER)
+    VarDecl
+      IdentifierList
+        IdentNode (Name: idx, L:7, C:3)
+        IdentNode (Name: val, L:7, C:8)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: my_array, L:9, C:3)
+          IntNumNode (Value: 1)
+        IntNumNode (Value: 10)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: my_array, L:10, C:3)
+          IntNumNode (Value: 2)
+        IntNumNode (Value: 20)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: my_array, L:11, C:3)
+          IntNumNode (Value: 3)
+        IntNumNode (Value: 30)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: idx, L:12, C:3)
+        IntNumNode (Value: 3)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: val, L:13, C:3)
+        VariableNode
+          IdentNode (Name: my_array, L:13, C:10)
+          IdExprNode
+            IdentNode (Name: idx, L:13, C:19)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:14, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: val, L:14, C:11)

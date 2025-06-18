@@ -1,0 +1,49 @@
+ProgramNode
+  IdentNode (Name: TestSeventeen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: global_factor, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+    VarDecl
+      IdentifierList
+        IdentNode (Name: result, L:7, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      FunctionHeadNode
+        IdentNode (Name: MultiplyByGlobal, L:9, C:10)
+        ArgumentsNode
+          ParameterList
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: val, L:9, C:27)
+              StandardTypeNode (Type: INTEGER)
+        StandardTypeNode (Type: INTEGER)
+      Declarations
+      CompoundStatementNode
+        StatementList
+          ReturnStatementNode
+            BinaryOpNode (Operator: *)
+              IdExprNode
+                IdentNode (Name: val, L:11, C:10)
+              IdExprNode
+                IdentNode (Name: global_factor, L:11, C:16)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: global_factor, L:15, C:3)
+        IntNumNode (Value: 3)
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: result, L:16, C:3)
+        FunctionCallExprNode
+          IdentNode (Name: MultiplyByGlobal, L:16, C:13)
+          ExpressionList
+            IntNumNode (Value: 10)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:17, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: result, L:17, C:11)

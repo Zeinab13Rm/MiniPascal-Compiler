@@ -1,0 +1,21 @@
+    start
+main_entry:
+    pushn 1
+    pushi 0
+    storel 0
+L_WHILE_START_0:
+    pushl 0
+    pushi 3
+    inf
+    jz L_WHILE_END_1
+    pushl 0
+    writei
+    pushl 0
+    pushi 1
+    add
+    storel 0
+    jump L_WHILE_START_0
+L_WHILE_END_1:
+    pushs "\n"
+    writes
+    stop

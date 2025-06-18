@@ -1,0 +1,30 @@
+ProgramNode
+  IdentNode (Name: TestFourteen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: result, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      FunctionHeadNode
+        IdentNode (Name: GetNumber, L:7, C:10)
+        ArgumentsNode
+        StandardTypeNode (Type: INTEGER)
+      Declarations
+      CompoundStatementNode
+        StatementList
+          ReturnStatementNode
+            IntNumNode (Value: 100)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: result, L:13, C:3)
+        IdExprNode
+          IdentNode (Name: GetNumber, L:13, C:13)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:14, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: result, L:14, C:11)

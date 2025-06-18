@@ -1,0 +1,19 @@
+ProgramNode
+  IdentNode (Name: TestOne, L:1, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: my_int, L:3, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: my_int, L:5, C:3)
+        IntNumNode (Value: 123)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:6, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: my_int, L:6, C:11)

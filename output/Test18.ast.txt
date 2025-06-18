@@ -1,0 +1,24 @@
+ProgramNode
+  IdentNode (Name: TestEighteen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: my_array, L:6, C:3)
+      ArrayTypeNode
+        IntNumNode (Value: 0)
+        IntNumNode (Value: 4)
+        StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: my_array, L:8, C:3)
+          IntNumNode (Value: 2)
+        IntNumNode (Value: 88)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:9, C:3)
+        ExpressionList
+          VariableNode
+            IdentNode (Name: my_array, L:9, C:11)
+            IntNumNode (Value: 2)

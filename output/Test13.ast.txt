@@ -1,0 +1,27 @@
+ProgramNode
+  IdentNode (Name: TestThirteen, L:4, C:9)
+  Declarations
+  SubprogramDeclarations
+    SubprogramDeclaration
+      ProcedureHeadNode
+        IdentNode (Name: PrintValue, L:5, C:11)
+        ArgumentsNode
+          ParameterList
+            ParameterDeclaration
+              IdentifierList
+                IdentNode (Name: val, L:5, C:22)
+              StandardTypeNode (Type: INTEGER)
+      Declarations
+      CompoundStatementNode
+        StatementList
+          ProcedureCallStatementNode
+            IdentNode (Name: writeln, L:7, C:3)
+            ExpressionList
+              IdExprNode
+                IdentNode (Name: val, L:7, C:11)
+  CompoundStatementNode
+    StatementList
+      ProcedureCallStatementNode
+        IdentNode (Name: PrintValue, L:11, C:3)
+        ExpressionList
+          IntNumNode (Value: 42)

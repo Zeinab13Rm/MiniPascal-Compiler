@@ -1,0 +1,14 @@
+    start
+    jump main_entry
+    jump DoPrint_end
+DoPrint:
+    pushs "Inside procedure"
+    writes
+    pushs "\n"
+    writes
+    return
+DoPrint_end:
+main_entry:
+    pusha DoPrint
+    call
+    stop

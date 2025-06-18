@@ -1,0 +1,41 @@
+ProgramNode
+  IdentNode (Name: TestSixteen, L:4, C:9)
+  Declarations
+    VarDecl
+      IdentifierList
+        IdentNode (Name: result, L:6, C:3)
+      StandardTypeNode (Type: INTEGER)
+  SubprogramDeclarations
+    SubprogramDeclaration
+      FunctionHeadNode
+        IdentNode (Name: Calc, L:7, C:10)
+        ArgumentsNode
+        StandardTypeNode (Type: INTEGER)
+      Declarations
+        VarDecl
+          IdentifierList
+            IdentNode (Name: local_val, L:9, C:5)
+          StandardTypeNode (Type: INTEGER)
+      CompoundStatementNode
+        StatementList
+          AssignStatementNode
+            VariableNode
+              IdentNode (Name: local_val, L:11, C:5)
+            IntNumNode (Value: 50)
+          ReturnStatementNode
+            BinaryOpNode (Operator: *)
+              IdExprNode
+                IdentNode (Name: local_val, L:12, C:12)
+              IntNumNode (Value: 2)
+  CompoundStatementNode
+    StatementList
+      AssignStatementNode
+        VariableNode
+          IdentNode (Name: result, L:16, C:3)
+        IdExprNode
+          IdentNode (Name: Calc, L:16, C:13)
+      ProcedureCallStatementNode
+        IdentNode (Name: writeln, L:17, C:3)
+        ExpressionList
+          IdExprNode
+            IdentNode (Name: result, L:17, C:11)

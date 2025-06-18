@@ -1,0 +1,19 @@
+    start
+    jump main_entry
+    jump GetNumber_end
+GetNumber:
+    pushi 100
+    storel -1
+    return
+GetNumber_end:
+main_entry:
+    pushn 1
+    pushn 1
+    pusha GetNumber
+    call
+    storel 0
+    pushl 0
+    writei
+    pushs "\n"
+    writes
+    stop

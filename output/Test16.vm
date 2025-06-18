@@ -1,0 +1,24 @@
+    start
+    jump main_entry
+    jump Calc_end
+Calc:
+    pushn 1
+    pushi 50
+    storel 0
+    pushl 0
+    pushi 2
+    mul
+    storel -1
+    return
+Calc_end:
+main_entry:
+    pushn 1
+    pushn 1
+    pusha Calc
+    call
+    storel 0
+    pushl 0
+    writei
+    pushs "\n"
+    writes
+    stop
